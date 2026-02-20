@@ -28,6 +28,7 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
         console.log('new balance-',newBalance);//new balannce sob tik takle dekabe sudhu
         //document.getElementById('balance').innerText = newBalance;
         setBalance(newBalance);
+        
         //1.hictory-con ke dore niye ashbo
         const history = document.getElementById('history-con');
 

@@ -38,7 +38,7 @@
         </section>
 
 
-
+<!--wellcome and info. section -->
     <section class=" w-11/12 mx-auto py-10 space-y-5">
         <h2 class=" text-3xl font-bold">Welcome to Pay<span class="text-primary">oo</span></h2>
         <p class=" text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
@@ -52,7 +52,7 @@
                 <img src="./images/opt-2.png" alt="">
                 <p class="text-neutral/50">Cashout</p>
             </button>
-            <button class="btn flex-col h-full py-5 btn-primary btn-soft">
+            <button onclick="showOnly('sendMoney')" class="btn flex-col h-full py-5 btn-primary btn-soft">
                 <img src="./images/opt-3.png" alt="">
                 <p class="text-neutral/50">Send Money</p>
             </button>
@@ -124,6 +124,31 @@
       </div>
     </div>
     </section>
+    
+    <!-- Send money part -->
+     <section id="sendMoney" class=" w-11/12 mx-auto py-5  hidden">
+     <h2 class=" text-xl font-bold mb-5">Send Money</h2>
+        
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral/70 font-bold">User Account Number</label>
+          <input id="sendMoney-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full " placeholder="Enter 11 digit number" />
+          <br>
+
+          <label class="label text-neutral/70 font-bold">Amount</label>
+          <input id="sendMoney-amount" type="number" class="input rounded-full bg-base-200 w-full" placeholder="Enter amount to withdraw" />
+          <br>
+
+          <label class="label text-neutral/70 font-bold">Pin Number</label>
+          <input id="sendMoney-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit Pin Number" />
+          
+          <button id="sendMoney-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+        </fieldset>
+      </div>
+    </div>
+    </section>
+
 
     <section id="history" class="w-11/12 mx-auto py-5 hidden">
         <h2 class=" text-xl font-bold mb-5">Transaction History</h2>
@@ -138,5 +163,6 @@
     <script src="/script/machine.js"></script>
     <script src="/script/addMoney.js"></script>
     <script src="/script/cashout.js"></script>
+    <script src="/script/sendMoney.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ if(contactnum == '01306909153' && pincode1== '1212'){
         3//.match pin and num.
        alert('login success');
 
-       window.location.assign("home.html");
+       window.location.assign("home.html");//home page ee dukai dibe
     }
     else{
         alert('login failed');
