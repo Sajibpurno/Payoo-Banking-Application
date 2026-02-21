@@ -24,7 +24,7 @@ document.getElementById('sendMoney-btn').addEventListener('click',function(){
     //pin
     const pin = getvalueFromInput('sendMoney-pin');
     if(pin === '1212'){
-        alert("Send Money sucessfull");
+        alert("Send Money successful");
         console.log('new balance-',newBalance);
         setBalance(newBalance);
 
